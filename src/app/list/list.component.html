@@ -1,4 +1,28 @@
 <div class="list-container">
-  <h2>Providers</h2>
-
+  <div *ngIf="selectedProviders.length">
+    <h2>Saved Prodivers</h2>
+    <div class="flex-container">
+      <app-card
+        *ngFor="let provider of selectedProviders"
+        class="flex-child"
+        [provider]="provider"
+        (callbackFunction)="ProcessCardCallback($event)"
+        [isSaved]="true"
+      >
+      </app-card>
+    </div>
+  </div>
+  <div *ngIf="unselectedProviders.length">
+    <h2>Prodivers</h2>
+    <div class="flex-container">
+      <app-card
+        *ngFor="let provider of unselectedProviders"
+        class="flex-child"
+        [provider]="provider"
+        (callbackFunction)="ProcessCardCallback($event)"
+        [isSaved]="false"
+      >
+      </app-card>
+    </div>
+  </div>
 </div>

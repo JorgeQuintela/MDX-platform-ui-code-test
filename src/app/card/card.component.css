@@ -1,0 +1,21 @@
+.point {
+  cursor: pointer;
+}
+.card {
+  background-color: #ddd;
+  border-radius: 20px;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  min-width: 50px;
+  max-width: 250px;
+}
+.card-hoverable:hover {
+  background-color: #88e7ff;
+}
+.btn {
+  float: right;
+}

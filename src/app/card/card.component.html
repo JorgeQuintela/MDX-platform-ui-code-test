@@ -1,0 +1,11 @@
+<div
+  (click)="isSaved ? '' : ProcessClick()"
+  [ngClass]="{ 'point card-hoverable': !isSaved }"
+  class="card"
+>
+  <button *ngIf="isSaved" class="point btn" (click)="ProcessClick()">X</button>
+  <div>Id: {{ provider.id }}</div>
+  <div>Name: {{ provider.name }}</div>
+  <div>Address: {{ provider.address }}</div>
+  <div>Phone: {{ provider.phone }}</div>
+</div>

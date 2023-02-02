@@ -8,3 +8,18 @@
 h2 {
   border-bottom: 1px solid lightgray;
 }
+.point {
+  cursor: pointer;
+}
+.flex-container {
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.flex-child {
+  flex: 1;
+  max-width: 300px;
+  min-width: 300px;
+}
